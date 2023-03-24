@@ -42,6 +42,7 @@ $languages['PHP'] = array(
     <table>
         <thead>
             <tr>
+                <th>Language</th>
                 <th>First Release</th>
                 <th>Latest Release</th>
                 <th>Designed By</th>
@@ -54,6 +55,7 @@ $languages['PHP'] = array(
 
         foreach ($languages as $language => $details) {
             echo "<tr>";
+            echo "<td> $language </td>";
             echo "<td> $details[first_release]</td> <td> $details[latest_release] </td> <td> $details[designed_by]</td>";
             foreach ($details['description'] as $key => $value) {
                 echo "<td> $value </td>";
